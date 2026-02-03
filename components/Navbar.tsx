@@ -8,9 +8,9 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
   const tabs: { id: Tab; label: string }[] = [
-    { id: 'ventures', label: 'Ventures' },
+    // { id: 'ventures', label: 'Ventures' },
     { id: 'services', label: 'Services' },
-    { id: 'clients', label: 'Clients' },
+    // { id: 'clients', label: 'Clients' },
     { id: 'tech-stack', label: 'Tech Stack' },
     { id: 'connect', label: 'Connect' },
   ];
@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
             className={`
-              px-4 py-2 rounded-full text-sm font-medium transition-all duration-200
+              px-4 py-2 mx-0.5 rounded-full text-sm font-medium transition-all duration-200
               ${
                 activeTab === tab.id
                   ? 'bg-gray-900 text-white dark:bg-white dark:text-black shadow-md'

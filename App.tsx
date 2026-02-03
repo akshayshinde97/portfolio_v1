@@ -7,21 +7,21 @@ import { TechStack } from './components/TechStack';
 import { Connect } from './components/Connect';
 import { Clients } from './components/Clients';
 
-export type Tab = 'ventures' | 'services' | 'clients' | 'tech-stack' | 'connect';
+export type Tab = 'services' | 'tech-stack' | 'connect';
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<Tab>('tech-stack');
+  const [activeTab, setActiveTab] = useState<Tab> ('tech-stack');
 
   const renderContent = () => {
     switch (activeTab) {
-      case 'ventures':
-        return <Ventures />;
+      // case 'ventures':
+      //   return <Ventures />;
       case 'services':
         return <Services />;
       case 'tech-stack':
         return <TechStack />;
-      case 'clients':
-        return <Clients />;
+      // case 'clients':
+      //   return <Clients />;
       case 'connect':
         return <Connect />;
       default:
@@ -52,5 +52,4 @@ const App: React.FC = () => {
     </div>
   );
 };
-
 export default App;

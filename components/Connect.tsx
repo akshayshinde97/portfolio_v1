@@ -1,10 +1,11 @@
 import React from 'react';
 import { Mail, Calendar, MapPin } from 'lucide-react';
+import SlotBooking from './Sechduler/SlotBooking';
 
 export const Connect: React.FC = () => {
   return (
     <div className="bg-white dark:bg-surface-dark rounded-2xl p-8 border border-gray-200 dark:border-gray-800">
-      <div className="text-center mb-8">
+      {/* <div className="text-center mb-8">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Let's work together</h2>
         <p className="text-gray-600 dark:text-gray-400">
           Have a project in mind? I'm currently available for new opportunities.
@@ -27,7 +28,8 @@ export const Connect: React.FC = () => {
           <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Schedule a Call</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400">30 min consultation</p>
         </a>
-      </div>
+      </div> */}
+      <SlotBooking />
     </div>
   );
 };
